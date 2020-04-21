@@ -1,7 +1,10 @@
-import collections
+#!/usr/bin/python3
 
-file_name = 'worldlist.txt'
-final_file_name = 'new_wordlist.txt'
+import collections
+import sys
+
+file_name = sys.argv[1]
+final_file_name = sys.argv[2]
 
 file = open(file_name,'r')
 sentence = file.read()
